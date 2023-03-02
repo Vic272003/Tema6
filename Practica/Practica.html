@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Práctica del Tema 5" />
+		<meta name="keywords" content="Tema 5: Integración de contenido interactivo" />
+        <title>Práctica</title>
+        <link rel="stylesheet" type="text/css" href="archivos/css/estilos.css" />
+        <script src="archivos/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="archivos/js/practica.js" type="text/javascript"></script> 
+    </head>
+    <body>
+        <h1 id="titulo">Tema 5 - Práctica</h1>
+
+        <div id="contenedor">
+            <ul id="pestana">
+                <li id="inicio"><a href="#">Inicio</a></li>
+                <li id="slider"><a href="#">Slider</a></li>
+                <li id="info"><a href="#">Información</a></li>
+                <li id="tabla"><a href="#">Tabla</a></li>
+                <li id="form"><a href="#">Formulario</a></li>
+            </ul>
+            <div id="ver-inicio">
+                <img class="icono" src="imagenes/futurama.png" alt="Imagen de Futurama">
+                <img class="icono" src="imagenes/sonic.png" alt="Imagen de Sonic">
+                <img class="icono" src="imagenes/homer.png" alt="Imagen de Homer Simpson">
+                <img class="icono" src="imagenes/mario.png" alt="Imagen de Mario Bros">
+                <img class="icono" src="imagenes/walter.png" alt="Imagen de Walter White">   
+            </div>
+            <div id="ver-slider">
+                <img class="imagen" src="imagenes/imagen-01.jpg" alt="Paisaje 1">
+                <img class="imagen" src="imagenes/imagen-02.jpg" alt="Paisaje 2">
+                <img class="imagen" src="imagenes/imagen-03.jpg" alt="Paisaje 3">
+                <img class="imagen" src="imagenes/imagen-04.jpg" alt="Paisaje 4">   
+            </div>
+            <div id="ver-info">
+                <a id="noticia-1" href="#">Noticia 1</a>
+                <p id="ver-noticia-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ut sed sunt voluptatum cum totam excepturi error optio, sequi illo dolorum incidunt veritatis consequatur, nisi aut fugiat corrupti deserunt minus!</p>
+                <br>
+                <br>
+                <a id="noticia-2" href="#">Noticia 2</a>
+                <p id="ver-noticia-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ut sed sunt voluptatum cum totam excepturi error optio, sequi illo dolorum incidunt veritatis consequatur, nisi aut fugiat corrupti deserunt minus!</p>
+                <br>
+                <br>
+                <a id="noticia-3" href="#">Noticia 3</a>
+                <p id="ver-noticia-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ut sed sunt voluptatum cum totam excepturi error optio, sequi illo dolorum incidunt veritatis consequatur, nisi aut fugiat corrupti deserunt minus!</p>                
+                <br><br>
+                <div id="mostrar_enlace">
+                    <input id="ver-ocultar-enlace" type="checkbox"/> Ocultar/Ver los enlaces
+                </div>
+            </div>
+            <div id="ver-tabla">
+                <table id="frutas-verduras">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Tipo</th>
+                        </tr>
+                        <tr class="datos">
+                            <td>Manzana</td>
+                            <td>FRUTA</td>
+                        </tr>
+                        <tr class="datos">
+                            <td>Pimiento</td>
+                            <td>VERDURA</td>
+                        </tr>
+                        <tr class="datos">
+                            <td>Naranja</td>
+                            <td>FRUTA</td>
+                        </tr>
+                    </thead>
+                </table>
+                <div id="radio">
+                    <div>
+                        <input type="radio" id="fruta" name="frutas-verduras" value="FRUTA">
+                        <label for="html">FRUTAS</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="verdura" name="frutas-verduras" value="VERDURA">
+                        <label for="css">VERDURAS</label>
+                    </div>
+                </div>
+            </div>
+            <div id="ver-form">
+                <div>
+                    <form id="formulario" action="#" method="post" onsubmit=false>
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <input type="text" id="nombre" name="nombre" class="campo" autocomplete= "off"/>
+                        <br>
+                        <label for="cantidad">Cantidad</label>
+                        <select id="cantidad" class="campo">
+                            <option value=""></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <br>
+                        <label for="url">url</label>
+                        <br>
+                        <input type="text" id="url" name="url" class="campo" autocomplete= "off"/>
+                        <br>
+                        <br>
+                        <button type="button" id="enviar">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <ul id="listado">
+                        <li><a href="#">Melocotones (1)</a></li>
+                        <li><a href="#">Peras (3)</a></li>
+                        <li><a href="#">Naranjas (2)</a></li>
+                        <li><a href="#">Manzanas (3)</a></li>
+                        <li><a href="#">Plátanos (2)</a></li>
+                    </ul>
+                    <br>
+                    <button type="button" id="ordenar">Ordenar</button>
+                </div>
+            </div>
+        </div>   
+    </body>  
+</html>

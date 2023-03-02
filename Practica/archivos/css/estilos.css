@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #F0F0F0;
+}
+
+h1{
+    margin: 50px 0;
+    text-align: center;
+}
+
+#contenedor{
+    width: 700px;
+    margin: auto;
+}
+
+/* PESTAÑAS */
+#pestana{
+    background-color: #223344;
+}
+
+#pestana li{
+    display: inline-block;
+    padding: 20px;
+    transition: all 400ms ease;
+}
+
+#pestana li:hover{
+    background-color: #71889e;
+}
+
+#pestana li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#pestana .activa {
+    background-color: #FFFFFF;
+}
+
+#pestana .activa a {
+    color: #223344;
+}
+
+#contenedor div{
+    background-color: #FFFFFF;
+    line-height: 1.8;
+    padding: 30px;
+    width: 100%;
+}
+
+/* INICIO */
+#ver-inicio{
+    text-align: center;
+    height: 350px;
+}
+
+/* SLIDER */
+#ver-slider{
+    text-align: center;
+    height: 350px;
+}
+
+/* INFORMACIÓN */
+#mostrar_enlace{
+    background-color: #71889e;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* TABLA */
+table{
+    width: 100%;
+    font-size: 28px;
+}
+
+table td{
+    border: 1px solid #71889e;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+#radio {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="radio"]{
+    width: 24px;
+    height: 24px;
+}
+
+label {
+    font-size: 28px;
+}
+
+/* FORMULARIO */
+#ver-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#ver-form div{
+    border: 1px solid #71889e;
+}
+
+#formulario label{
+    font-size: 32px;
+}
+
+#formulario input, select {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+button{
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    width: 100%;
+}
+
+#listado li a {
+    color: #223344;
+    text-decoration: none;
+}
+
+#listado li a:hover {
+    color: red;
+}
